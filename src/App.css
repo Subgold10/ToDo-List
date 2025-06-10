@@ -1,0 +1,139 @@
+.app-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.todo-form input[type="text"] {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  color: #333;
+}
+
+.todo-form input[type="text"]::placeholder {
+  color: #a0a0a0;
+}
+
+.todo-form button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+.no-todos-message {
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.todo-item.completed {
+  background-color: #e6ffe6;
+  border-color: #c9f0c9;
+  opacity: 0.9;
+}
+
+.todo-item .checkbox {
+  margin-right: 12px;
+  transform: scale(1.1);
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+.todo-item .actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.todo-item button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.2s ease; /* Added box-shadow to transition */
+  color: rgb(255, 255, 255);
+  font-weight: 500; /* Added: Slightly bolder text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added: Subtle shadow */
+}
+
+.todo-item button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Added: Stronger shadow on hover */
+}
+.todo-item .edit-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.todo-item .edit-button:hover {
+  background-color: #e0a800;
+}
+
+.todo-item .delete-button {
+  background-color: #dc3545;
+}
+
+.todo-item .delete-button:hover {
+  background-color: #c82333;
+}
