@@ -12,10 +12,9 @@ You'll need [Node.js](https://nodejs.org/en/download/) and `npm` (Node Package M
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    cd YOUR_REPOSITORY_NAME
+    git clone [https://github.com/Subgold10/ToDo-List]
+    cd p1
     ```
-    (Remember to replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub username and repository name.)
 
 2.  **Install dependencies:**
     ```bash
